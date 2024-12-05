@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza itens na horizontal */
+    gap: 20px;  /* Espaçamento entre o display e os botões */
+}
+
+.display {
+    width: 100%; /* Faz o display ocupar toda a largura do contêiner */
+    display: flex;
+    justify-content: center; /* Centraliza o input dentro do display */
+}
+
+.display input {
+    width: 90%; /* Faz o input ocupar 90% da largura do display */
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Organiza os botões em 4 colunas */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+button {
+    padding: 22px;
+    font-size: 24px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.active {
+    background-color: #003f7f;
+}
+
+button:nth-child(13) {
+    background-color: #dc3545; /* Botão "C" */
+}
+
+button:nth-child(13):hover {
+    background-color: #a71d2a;
+}
